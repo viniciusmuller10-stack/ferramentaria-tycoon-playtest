@@ -1,11 +1,23 @@
 {
-  "version": "0.8.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.8.0/FerramentariaTycoon.pck",
-  "pck_sha256": "0e64a85fa6452e21652e73d887ac41111ac7d6218a27e7b00fb6caba6dc66572",
-  "pck_size": 219694472,
+  "version": "0.9.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.9.0/FerramentariaTycoon.pck",
+  "pck_sha256": "c09a9593249a616cb705a3e38ba44074386d632fc75ea1cf30696782fae62721",
+  "pck_size": 219748888,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.9.0",
+      "date": "2026-11-16",
+      "notes": [
+        "Fase 18: UI compacta, saves, manutencao, RH gestor, estoque, TI/Engenharia, catalogo metal-mecanico e multiplas docas",
+        "Menus compactos, scroll preservado e multiplos saves nomeados",
+        "Central de Manutencao, Tecnico de Manutencao e RH gestor",
+        "Suprimentos como gestao de estoque com reposicao automatica",
+        "Arvore de TI, projetos de Engenharia e novas maquinas metal-mecanicas (sem injetora)",
+        "Multiplos caminhoes simultaneos nas docas"
+      ]
+    },
     {
       "version": "0.8.0",
       "date": "2026-11-16",
