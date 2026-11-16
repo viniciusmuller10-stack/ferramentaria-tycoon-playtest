@@ -1,11 +1,19 @@
 {
-  "version": "0.11.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.11.0/FerramentariaTycoon.pck",
-  "pck_sha256": "99edff2407f27cf6e00d1da07620d75782fc3e01ff124a09fc19dff9399f539b",
-  "pck_size": 219814784,
+  "version": "0.11.1",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.11.1/FerramentariaTycoon.pck",
+  "pck_sha256": "d21836ad940adf8de3e270c39c9fcd804e5fceab9fd590f7bac23dff75f3ed02",
+  "pck_size": 219817296,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.11.1",
+      "date": "2026-11-16",
+      "notes": [
+        "Correcao dos turnos: servicos continuam produzindo na troca de turno",
+        "Corrigido: servicos aceitos ficavam parados quando o operador responsavel saia do turno. Agora o operador do turno ativo assume o servico na mesma maquina, e a producao segue 24h com 3 turnos."
+      ]
+    },
     {
       "version": "0.11.0",
       "date": "2026-11-16",
@@ -103,15 +111,6 @@
       "date": "2026-11-16",
       "notes": [
         "Domínio ativo: toolshoptycoon.com"
-      ]
-    },
-    {
-      "version": "0.6.1",
-      "date": "2026-11-16",
-      "notes": [
-        "Currículos do RH sem cor de pele/etnia (nível, especialidade, custo e salário)",
-        "Novo sistema de falência com relatório final",
-        "Removida a coluna no meio do vão dos portais entre pavilhões"
       ]
     }
   ]
