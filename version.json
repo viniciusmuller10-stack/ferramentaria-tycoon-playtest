@@ -1,11 +1,18 @@
 {
-  "version": "0.6.1",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.6.1/FerramentariaTycoon.pck",
-  "pck_sha256": "e7d1dffab7ca6df0bccd4599e74c47915e18a23753ce72859ec6f3a9b4765aa3",
-  "pck_size": 219654904,
+  "version": "0.6.2",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.6.2/FerramentariaTycoon.pck",
+  "pck_sha256": "d64f3ac5679705e94932d577765d0ec79812dfc40bb07f75bcdec49a5e56e354",
+  "pck_size": 219656184,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://viniciusmuller10-stack.github.io/ferramentaria-tycoon-playtest/",
   "changelog": [
+    {
+      "version": "0.6.2",
+      "date": "2026-11-16",
+      "notes": [
+        "Domínio ativo: toolshoptycoon.com"
+      ]
+    },
     {
       "version": "0.6.1",
       "date": "2026-11-16",
