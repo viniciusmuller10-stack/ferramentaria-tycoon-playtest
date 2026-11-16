@@ -1,11 +1,19 @@
 {
-  "version": "0.9.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.9.0/FerramentariaTycoon.pck",
-  "pck_sha256": "c09a9593249a616cb705a3e38ba44074386d632fc75ea1cf30696782fae62721",
-  "pck_size": 219748888,
+  "version": "0.10.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.10.0/FerramentariaTycoon.pck",
+  "pck_sha256": "eb3a640449caaca877ab1e81e2bf5f93594768496226723b668026c50e0514f5",
+  "pck_size": 219781860,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.10.0",
+      "date": "2026-11-16",
+      "notes": [
+        "Fase 20: auto-layout industrial, galpao sem colunas internas, 4 novos modelos 3D, funcionarios sem fila na parede, alerta preditivo e Lean",
+        "Novo botao Auto-Desempacotar e Organizar Layout; mudanca de galpao ja organiza as celulas; galpoes sem colunas internas; novas maquinas com modelos proprios (serra automatica, furadeira radial, mandrilhadora, centro multieixos); operadores vao ao posto de trabalho; alerta preditivo de 40% de desgaste (TI nivel 3); Lean reduz deslocamento e espera."
+      ]
+    },
     {
       "version": "0.9.0",
       "date": "2026-11-16",
