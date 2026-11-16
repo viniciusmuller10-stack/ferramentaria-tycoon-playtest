@@ -1,11 +1,20 @@
 {
-  "version": "0.7.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.7.0/FerramentariaTycoon.pck",
-  "pck_sha256": "eb0f379f4d3ba6c217f3576b43ccced078bbacb75c473c40987344c1fe93cbd1",
-  "pck_size": 219670456,
+  "version": "0.7.1",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.7.1/FerramentariaTycoon.pck",
+  "pck_sha256": "e7235996a55dc671c28c81cf3d870c6081cd47b6eba6266d10ed6597ad8f7038",
+  "pck_size": 219674776,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.7.1",
+      "date": "2026-11-16",
+      "notes": [
+        "Empilhadeira logística e efeitos por máquina",
+        "A empilhadeira agora vai à doca quando chega caminhão, leva o palete ao estoque e carrega a expedição",
+        "Cada máquina tem seu efeito: cavaco no torno/fresa, névoa de refrigerante no CNC, centelhas azuis na eletroerosão, prensa sem faísca"
+      ]
+    },
     {
       "version": "0.7.0",
       "date": "2026-11-16",
