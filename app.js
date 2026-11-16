@@ -133,3 +133,40 @@ async function sendComment(id) {
   try { await rpc("add_comment", { p_code: session.code, p_report: id, p_author: session.name, p_body: body }); await refresh(); } catch (e) { alert(e.message); }
 }
 $("lightbox").onclick = () => { $("lightbox").hidden = true; };
+
+/* ---------- contador de instalações (API pública de Releases do GitHub) ---------- */
+(function downloadCounter() {
+  const REPO = "viniciusmuller10-stack/ferramentaria-tycoon-playtest";
+  const KEY = "ft_dl_count", TTL = 5 * 60 * 1000;
+  const box = $("dlcount"), num = $("dlnum");
+  let total = null;
+  const fmt = (n) => Number(n).toLocaleString("pt-BR");
+  const show = (n) => { total = n; num.textContent = fmt(n); box.classList.remove("off"); };
+  const bump = () => { box.classList.remove("bump"); void box.offsetWidth; box.classList.add("bump"); };
+
+  // Cada instalação = asset Setup_*.exe (o executável do jogo e os .pck não contam como instalação).
+  async function fetchTotal() {
+    let sum = 0;
+    for (let page = 1; page <= 5; page++) {
+      const r = await fetch(`https://api.github.com/repos/${REPO}/releases?per_page=100&page=${page}`, { headers: { Accept: "application/vnd.github+json" } });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const releases = await r.json();
+      for (const rel of releases) for (const a of rel.assets || []) if (/^Setup_.*\.exe$/i.test(a.name)) sum += a.download_count || 0;
+      if (releases.length < 100) break;
+    }
+    return sum;
+  }
+  let cached = null;
+  try { cached = JSON.parse(store.get(KEY) || "null"); } catch (e) {}
+  if (cached && typeof cached.n === "number") show(cached.n);          // mostra o último valor conhecido na hora
+  if (!cached || Date.now() - cached.t > TTL) {
+    fetchTotal().then((n) => { store.set(KEY, JSON.stringify({ n, t: Date.now() })); show(n); })
+      .catch(() => { if (!cached) { num.textContent = "—"; box.classList.add("off"); box.title = "Contador indisponível no momento"; } });
+  }
+  // +1 visual imediato ao clicar em baixar (guardado no cache para não "voltar" ao recarregar)
+  $("dl").addEventListener("click", () => {
+    if (total === null) return;
+    show(total + 1); bump();
+    store.set(KEY, JSON.stringify({ n: total, t: (cached && cached.t) || Date.now() }));
+  });
+})();

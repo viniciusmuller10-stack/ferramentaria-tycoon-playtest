@@ -64,3 +64,11 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:20px}
 #lightbox[hidden]{display:none}
 #lightbox img{max-width:96vw;max-height:94vh}
 @media(max-width:560px){nav{display:none}.hero{padding-top:36px}}
+
+.dlcount{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0 14px;padding:7px 14px;background:linear-gradient(180deg,#223043,#16202c);border:2px solid var(--edge);border-left:5px solid var(--orange);border-radius:8px;color:var(--yellow);box-shadow:0 3px 0 #0b1017;vertical-align:middle}
+.dlcount .num{font:800 20px/1 "Segoe UI",system-ui,sans-serif;color:var(--text);font-variant-numeric:tabular-nums;min-width:1ch}
+.dlcount .lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.dlcount.bump .num{animation:bump .5s ease-out}
+.dlcount.off{opacity:.55}
+@keyframes bump{0%{transform:scale(1);color:var(--yellow)}40%{transform:scale(1.35);color:var(--orange)}100%{transform:scale(1)}}
+@media(max-width:560px){.dlcount{margin:12px 0 0}}

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn27g7agtd08d"
-path="res://.godot/imported/favicon.png-e68b6744b1a9ac9584c473b5d9bb2c53.ctex"
+path="res://.godot/imported/favicon.png-a6d716ffeba694bba373102893f7a129.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://playtest_site/img/favicon.png"
-dest_files=["res://.godot/imported/favicon.png-e68b6744b1a9ac9584c473b5d9bb2c53.ctex"]
+source_file="res://playtest_repo/img/favicon.png"
+dest_files=["res://.godot/imported/favicon.png-a6d716ffeba694bba373102893f7a129.ctex"]
 
 [params]
 
