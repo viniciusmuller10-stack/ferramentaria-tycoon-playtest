@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferramentaria Tycoon — Playtest</title>
+<meta name="description" content="Baixe o playtest de Ferramentaria Tycoon, veja as novidades e reporte bugs com print.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img src="img/favicon.png" alt="" width="36" height="36"><span>FERRAMENTARIA <b>TYCOON</b></span></div>
+  <nav>
+    <a href="#baixar">Baixar</a>
+    <a href="#novidades">Novidades</a>
+    <a href="#mural">Mural de bugs</a>
+  </nav>
+</header>
+
+<section class="hero" style="background-image:linear-gradient(180deg,rgba(15,20,28,.35),#0f141c 96%),url(img/hero.jpg)">
+  <div class="hero-in">
+    <p class="tag">PLAYTEST FECHADO • PARA WINDOWS</p>
+    <h1>Da garagem ao <span>império industrial</span></h1>
+    <p class="lead">Gerencie uma ferramentaria, contrate equipe, compre máquinas e cresça galpão a galpão. Ajude a lapidar o jogo: jogue, encontre problemas e cole o print aqui.</p>
+    <a class="btn big" id="dl" href="#" download>⬇ Baixar instalador <small id="dlver"></small></a>
+    <p class="hint" id="dlhint">Windows 10/11 • instalação única, sem pedir administrador</p>
+  </div>
+</section>
+
+<main>
+<section id="baixar" class="card">
+  <h2>Como instalar</h2>
+  <ol class="steps">
+    <li><b>1. Instale uma única vez.</b> Baixe e abra o <code>Setup_FerramentariaTycoon_Playtest.exe</code>. Se o Windows avisar “PC protegido”, clique em <i>Mais informações → Executar assim mesmo</i> (o instalador ainda não é assinado).</li>
+    <li><b>2. Abra pelo atalho da Área de Trabalho.</b> O Launcher confere a versão e baixa sozinho só o que mudou. Depois é só jogar.</li>
+  </ol>
+  <p class="hint">Dentro do jogo, aperte <kbd>F8</kbd> para tirar um print automático e abrir este portal. Aqui, cole com <kbd>Ctrl</kbd> + <kbd>V</kbd>.</p>
+</section>
+
+<section id="novidades" class="card">
+  <h2>Novidades <span class="pill" id="curver">—</span></h2>
+  <div id="changelog" class="log">Carregando...</div>
+</section>
+
+<section id="mural" class="card">
+  <h2>Mural de bugs e melhorias</h2>
+
+  <div id="login" class="panel">
+    <p>Entre com seu nome e o código de convite que o Vinicius te enviou.</p>
+    <div class="row">
+      <input id="inName" placeholder="Seu nome ou apelido" maxlength="30" autocomplete="nickname">
+      <input id="inCode" placeholder="Código de convite" maxlength="30" autocomplete="off">
+      <button class="btn" id="btnEnter">Entrar</button>
+    </div>
+    <p class="err" id="loginErr"></p>
+  </div>
+
+  <div id="app" hidden>
+    <div class="bar">
+      <span>Testador: <b id="who"></b></span>
+      <span class="grow"></span>
+      <button class="ghost" id="btnAdmin" title="Modo administrador">🔧</button>
+      <button class="ghost" id="btnExit">Sair</button>
+    </div>
+
+    <form id="form" class="panel">
+      <h3>Novo relato</h3>
+      <div class="row">
+        <select id="fCat">
+          <option>Bug Visual</option>
+          <option>Bug de Mecânica</option>
+          <option>Sugestão de Melhoria</option>
+          <option>Economia / Balanceamento</option>
+        </select>
+        <input id="fVer" placeholder="Versão (ex.: 0.6.0)" maxlength="20">
+      </div>
+      <textarea id="fDesc" rows="4" placeholder="Descreva o que aconteceu, o que esperava e como repetir..." maxlength="4000"></textarea>
+      <div id="drop" tabindex="0">
+        <div id="dropHint">📋 Clique aqui e aperte <kbd>Ctrl</kbd>+<kbd>V</kbd> para colar o print<br><small>ou arraste/anexe uma imagem</small></div>
+        <img id="preview" alt="" hidden>
+        <button type="button" class="ghost" id="btnClear" hidden>Remover imagem</button>
+      </div>
+      <input type="file" id="fFile" accept="image/*" hidden>
+      <div class="row">
+        <button type="button" class="ghost" id="btnFile">Anexar imagem</button>
+        <span class="grow"></span>
+        <span class="err" id="formErr"></span>
+        <button class="btn" id="btnSend" type="submit">Enviar relato</button>
+      </div>
+    </form>
+
+    <div class="bar filters" id="filters">
+      <button data-f="" class="chip on">Todos</button>
+      <button data-f="Aberto" class="chip">Aberto</button>
+      <button data-f="Em Ajuste" class="chip">Em Ajuste</button>
+      <button data-f="Corrigido" class="chip">Corrigido</button>
+    </div>
+    <div id="feed"></div>
+  </div>
+</section>
+</main>
+
+<footer>Ferramentaria Tycoon — playtest. Seus relatos ficam visíveis a todos os testadores convidados.</footer>
+<div id="lightbox" hidden><img alt=""></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
