@@ -1,11 +1,18 @@
 {
-  "version": "0.6.2",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.6.2/FerramentariaTycoon.pck",
-  "pck_sha256": "d64f3ac5679705e94932d577765d0ec79812dfc40bb07f75bcdec49a5e56e354",
-  "pck_size": 219656184,
+  "version": "0.6.3",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.6.3/FerramentariaTycoon.pck",
+  "pck_sha256": "4be095325d819d939a1f1e292f9b4652671ee7129abe878d5a4ba725c05ba2e6",
+  "pck_size": 223666392,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://viniciusmuller10-stack.github.io/ferramentaria-tycoon-playtest/",
   "changelog": [
+    {
+      "version": "0.6.3",
+      "date": "2026-11-16",
+      "notes": [
+        "Correção: o botão Abrir Portal de Playtest (F8) agora abre o site certo"
+      ]
+    },
     {
       "version": "0.6.2",
       "date": "2026-11-16",
