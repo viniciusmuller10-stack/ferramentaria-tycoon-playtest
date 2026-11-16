@@ -1,11 +1,20 @@
 {
-  "version": "0.6.4",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.6.4/FerramentariaTycoon.pck",
-  "pck_sha256": "eef94d1d18aa224a6ccdbc9c35c1405335544b06d835a53e819b2445fa292a32",
-  "pck_size": 219657364,
+  "version": "0.6.5",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.6.5/FerramentariaTycoon.pck",
+  "pck_sha256": "c96950e3952a6ebfa1b8bc13dc06b33fb50053bc5d7d6565d480312714d2977d",
+  "pck_size": 219659300,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
-  "portal_url": "https://viniciusmuller10-stack.github.io/ferramentaria-tycoon-playtest/",
+  "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.6.5",
+      "date": "2026-11-16",
+      "notes": [
+        "Empilhadeira funcionando",
+        "A Empilhadeira Elétrica comprada agora trabalha, com empilhadeirista incluso transportando feixes de aço (+80% no transporte interno)",
+        "Botão de reportar bug (F8) abre o portal correto"
+      ]
+    },
     {
       "version": "0.6.4",
       "date": "2026-11-16",
