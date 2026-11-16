@@ -1,1 +1,1 @@
-window.PLAYTEST_CONFIG = { supabaseUrl: "", anonKey: "" };
+window.PLAYTEST_CONFIG = { supabaseUrl: "https://ekcdlqpkdohbxuwuctut.supabase.co", anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVrY2RscXBrZG9oYnh1d3VjdHV0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ4MDc3MzksImV4cCI6MjExMDM4MzczOX0.3WVuyZ1OzuqL7PfEuacPU2VSiLXUasfSdHXNm6JxGM0" };

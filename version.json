@@ -1,8 +1,8 @@
 {
   "version": "0.6.0",
   "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.6.0/FerramentariaTycoon.pck",
-  "pck_sha256": "3c90068ad0030ac2fa3e61300574686ff16320225d65ab40b590f646de955207",
-  "pck_size": 219645884,
+  "pck_sha256": "2135e9847aec57170d89a59c7d4b969efb4bee7ff3909e181a2a0ae70532df34",
+  "pck_size": 219647160,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://viniciusmuller10-stack.github.io/ferramentaria-tycoon-playtest/",
   "changelog": [
