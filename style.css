@@ -51,7 +51,7 @@ input:focus,select:focus,textarea:focus,#drop:focus{outline:2px solid var(--oran
 .item{background:var(--panel2);border:1px solid var(--edge);border-radius:10px;padding:14px;margin:10px 0}
 .item .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--muted)}
 .badge{border-radius:99px;padding:1px 10px;font-weight:700;font-size:12px;color:#1a1205}
-.st-Aberto{background:var(--bad)}.st-Em\ Ajuste{background:var(--yellow)}.st-Corrigido{background:var(--ok)}
+.st-Aberto{background:var(--bad)}.st-EmAjuste{background:var(--yellow)}.st-Corrigido{background:var(--ok)}
 .cat{background:#0b1017;border:1px solid var(--edge);border-radius:6px;padding:0 8px;color:var(--text)}
 .item p{margin:8px 0;white-space:pre-wrap;word-wrap:break-word}
 .item img.shot{max-width:100%;max-height:340px;border-radius:8px;border:1px solid var(--edge);cursor:zoom-in}

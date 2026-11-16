@@ -112,7 +112,7 @@ function render() {
   const list = reports.filter((r) => !filter || r.status === filter);
   $("feed").innerHTML = list.map((r) => `
     <div class="item" data-id="${r.id}">
-      <div class="meta"><span class="badge st-${esc(r.status)}">${esc(r.status)}</span><span class="cat">${esc(r.category)}</span><b>${esc(r.author)}</b>
+      <div class="meta"><span class="badge st-${r.status.replace(/\s+/g, "")}">${esc(r.status)}</span><span class="cat">${esc(r.category)}</span><b>${esc(r.author)}</b>
         <span>${new Date(r.created_at).toLocaleString("pt-BR")}</span>${r.version ? `<span>v${esc(r.version)}</span>` : ""}
         ${admin ? `<span class="adm"><select data-st="${r.id}">${STATUS.map((s) => `<option${s === r.status ? " selected" : ""}>${s}</option>`).join("")}</select></span>` : ""}</div>
       <p>${esc(r.description)}</p>
