@@ -170,3 +170,36 @@ $("lightbox").onclick = () => { $("lightbox").hidden = true; };
     store.set(KEY, JSON.stringify({ n: total, t: (cached && cached.t) || Date.now() }));
   });
 })();
+
+/* ---------- ranking oficial (leitura publica, sem codigo de convite) ---------- */
+(function ranking() {
+  const DIFF = { facil: "Fácil", medio: "Médio", dificil: "Difícil", patrao: "Modo Patrão" };
+  let rows = [], diff = "", sort = "net_worth";
+  const body = $("rkBody");
+  const money = (n) => "R$ " + Number(n).toLocaleString("pt-BR");
+  function render() {
+    const list = rows.filter((r) => !diff || r.difficulty === diff).sort((a, b) => Number(b[sort]) - Number(a[sort])).slice(0, 100);
+    $("rkcount").textContent = rows.length + " oficina" + (rows.length === 1 ? "" : "s");
+    if (!list.length) { body.innerHTML = '<tr><td colspan="8" class="hint">Nenhuma oficina neste filtro ainda.</td></tr>'; return; }
+    body.innerHTML = list.map((r, i) => `<tr class="${i < 3 ? "podium" : ""}"><td>${i + 1}</td><td>${esc(r.company_name)}</td><td>${esc(r.director_name)}</td><td>${esc(DIFF[r.difficulty] || r.difficulty)}</td><td>${Number(r.level)}</td><td>${Number(r.days)}</td><td>★ ${Number(r.reputation).toFixed(1)}</td><td>${money(r.net_worth)}</td></tr>`).join("");
+  }
+  async function load() {
+    try {
+      const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && new URLSearchParams(location.search).get("rankapi");
+      if (local) {
+        const r = await fetch(local + "/rest/v1/rpc/list_ranking", { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" });
+        rows = await r.json();
+      } else {
+        rows = (await rpc("list_ranking", {})) || [];
+      }
+      render();
+    } catch (e) {
+      body.innerHTML = '<tr><td colspan="8" class="hint">Ranking indisponível no momento.</td></tr>';
+      $("rkcount").textContent = "—";
+    }
+  }
+  $("rkDiff").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; diff = b.dataset.d; [...$("rkDiff").children].forEach((c) => c.classList.toggle("on", c === b)); render(); };
+  $("rkSort").onclick = (e) => { const b = e.target.closest("button"); if (!b || !b.dataset.s) return; sort = b.dataset.s; [...$("rkSort").querySelectorAll("button")].forEach((c) => c.classList.toggle("on", c === b)); render(); };
+  load();
+  setInterval(load, 30000);
+})();

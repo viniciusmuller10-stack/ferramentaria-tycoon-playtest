@@ -1,11 +1,19 @@
 {
-  "version": "0.10.1",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.10.1/FerramentariaTycoon.pck",
-  "pck_sha256": "400fc6eaf9ad8e7cff4cc7958f9a0511c96f538981a64090bd7025336dd8bace",
-  "pck_size": 219788100,
+  "version": "0.11.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.11.0/FerramentariaTycoon.pck",
+  "pck_sha256": "99edff2407f27cf6e00d1da07620d75782fc3e01ff124a09fc19dff9399f539b",
+  "pck_size": 219814784,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.11.0",
+      "date": "2026-11-16",
+      "notes": [
+        "Fase 22: turnos e jornada, energia que recupera, central de alertas, UI compacta e ranking online",
+        "Jornada 8/9/10h e 1o/2o/3o turno no RH, com troca de turno no portao e energia que recupera em casa; nova area fixa de alertas (faixa, badge e toasts) que nao cobre mais janelas nem botoes; interface compacta 85% por padrao (opcao de escala em Opcoes) e modais menores; botao Ranking no jogo e secao Ranking no site (ativa assim que o servidor do ranking for configurado)."
+      ]
+    },
     {
       "version": "0.10.1",
       "date": "2026-11-16",
@@ -104,19 +112,6 @@
         "Currículos do RH sem cor de pele/etnia (nível, especialidade, custo e salário)",
         "Novo sistema de falência com relatório final",
         "Removida a coluna no meio do vão dos portais entre pavilhões"
-      ]
-    },
-    {
-      "version": "0.6.0",
-      "date": "2026-11-16",
-      "notes": [
-        "Capacidade real por galpão: garagem 3 máquinas/2 pessoas, galpão 8 a 14, pavilhão 16 a 24",
-        "Alvarás de expansão interna (carga elétrica, produção em lote, faturamento mensal)",
-        "Balões de fala 2D sem sobreposição",
-        "Tela cheia, resolução, qualidade gráfica e idioma nas Opções",
-        "Correção: serviço parado ao Continuar o jogo salvo",
-        "Correção: orientação dos funcionários ao andar e barra na frente do corpo",
-        "Novo: tecla F8 para reportar bug com print e portal de playtest"
       ]
     }
   ]

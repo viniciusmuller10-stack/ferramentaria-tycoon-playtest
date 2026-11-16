@@ -24,6 +24,12 @@ h1 span{color:var(--orange)}
 .ghost:hover{border-color:var(--orange)}
 .hint{color:var(--muted);font-size:14px}
 main{max-width:860px;margin:0 auto;padding:0 16px 40px}
+.rk-wrap{overflow-x:auto}
+.rk{width:100%;border-collapse:collapse;font-size:14px}
+.rk th{text-align:left;color:var(--yellow);font-weight:600;padding:6px 8px;border-bottom:2px solid var(--edge)}
+.rk td{padding:6px 8px;border-bottom:1px solid rgba(255,255,255,.06)}
+.rk td:nth-child(n+5),.rk th:nth-child(n+5){text-align:right}
+.rk tr.podium td:first-child{color:var(--yellow);font-weight:700}
 .card{background:var(--panel);border:2px solid var(--edge);border-radius:12px;padding:20px;margin-top:20px}
 .card h2{margin:0 0 10px;color:var(--yellow);font-size:22px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .steps{margin:0;padding:0;list-style:none;display:grid;gap:10px}

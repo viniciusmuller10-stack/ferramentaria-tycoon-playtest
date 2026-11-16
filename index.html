@@ -14,6 +14,7 @@
   <nav>
     <a href="#baixar">Baixar</a>
     <a href="#novidades">Novidades</a>
+    <a href="#ranking">Ranking</a>
     <a href="#mural">Mural de bugs</a>
   </nav>
 </header>
@@ -46,6 +47,25 @@
 <section id="novidades" class="card">
   <h2>Novidades <span class="pill" id="curver">—</span></h2>
   <div id="changelog" class="log">Carregando...</div>
+</section>
+
+<section id="ranking" class="card">
+  <h2>🏆 Ranking Oficial dos Playtesters <span class="pill" id="rkcount">—</span></h2>
+  <p class="hint">Atualizado em tempo real pelas oficinas dos testadores (a cada virada de dia ou save). Cada oficina ocupa uma única linha.</p>
+  <div class="bar filters" id="rkDiff">
+    <button data-d="" class="chip on">Todos</button>
+    <button data-d="facil" class="chip">Fácil</button>
+    <button data-d="medio" class="chip">Médio</button>
+    <button data-d="dificil" class="chip">Difícil</button>
+    <button data-d="patrao" class="chip">Modo Patrão</button>
+  </div>
+  <div class="bar filters" id="rkSort">
+    <span class="hint">Ordenar por:</span>
+    <button data-s="net_worth" class="chip on">Patrimônio</button>
+    <button data-s="reputation" class="chip">Reputação</button>
+    <button data-s="days" class="chip">Dias</button>
+  </div>
+  <div class="rk-wrap"><table class="rk" id="rkTable"><thead><tr><th>#</th><th>Ferramentaria</th><th>Diretor</th><th>Dificuldade</th><th>Nível</th><th>Dias</th><th>Reput.</th><th>Patrimônio</th></tr></thead><tbody id="rkBody"><tr><td colspan="8" class="hint">Carregando ranking...</td></tr></tbody></table></div>
 </section>
 
 <section id="mural" class="card">
