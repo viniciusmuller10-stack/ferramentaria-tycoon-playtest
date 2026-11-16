@@ -1,11 +1,19 @@
 {
-  "version": "0.10.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.10.0/FerramentariaTycoon.pck",
-  "pck_sha256": "eb3a640449caaca877ab1e81e2bf5f93594768496226723b668026c50e0514f5",
-  "pck_size": 219781860,
+  "version": "0.10.1",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.10.1/FerramentariaTycoon.pck",
+  "pck_sha256": "400fc6eaf9ad8e7cff4cc7958f9a0511c96f538981a64090bd7025336dd8bace",
+  "pck_size": 219788100,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.10.1",
+      "date": "2026-11-16",
+      "notes": [
+        "Fase 21: hotfix de saves (limpeza total ao carregar) e salas de TI/Engenharia no Nivel 5",
+        "Corrigido vazamento de maquinas, funcionarios e pedidos ao trocar de save; salas de Comercial, Engenharia e TI agora existem no Nivel 5; Engenheiro e Analista de TI podem ser contratados no RH (Cargos Especiais)."
+      ]
+    },
     {
       "version": "0.10.0",
       "date": "2026-11-16",
