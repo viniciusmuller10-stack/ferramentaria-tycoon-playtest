@@ -1,11 +1,19 @@
 {
-  "version": "0.14.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.14.0/FerramentariaTycoon.pck",
-  "pck_sha256": "87871ce8187d3d06950e716e777dbb26d320a89899acc34a59d7f8796874a52d",
-  "pck_size": 219898416,
+  "version": "0.14.1",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.14.1/FerramentariaTycoon.pck",
+  "pck_sha256": "ec36d4e01742589dcc67263106dc99e940650806c1e77805a4c2a8d0e717cfcf",
+  "pck_size": 219900080,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.14.1",
+      "date": "2026-11-17",
+      "notes": [
+        "Hotfix: empresa nova e saves antigos nao deixam o operador parado; funcionario ocioso fica dentro da garagem",
+        "Corrige operador principal travado por falta herdada de outra partida (empresa nova zera a ficha e o carregamento limpa saves afetados); ponto de espera de funcionario sem servico agora fica dentro do piso da garagem."
+      ]
+    },
     {
       "version": "0.14.0",
       "date": "2026-11-17",
@@ -101,18 +109,6 @@
         "Empilhadeira logística e efeitos por máquina",
         "A empilhadeira agora vai à doca quando chega caminhão, leva o palete ao estoque e carrega a expedição",
         "Cada máquina tem seu efeito: cavaco no torno/fresa, névoa de refrigerante no CNC, centelhas azuis na eletroerosão, prensa sem faísca"
-      ]
-    },
-    {
-      "version": "0.7.0",
-      "date": "2026-11-16",
-      "notes": [
-        "Fase 17: eventos de gestão, banco por metas e economia mais difícil",
-        "Novos eventos com escolhas: Auditor da ISO, Receita Federal, proposta de propina e pedido de patrocínio",
-        "Banco só libera empréstimo após 8 pedidos, reputação 2,5 e 5 dias de caixa positivo",
-        "Economia rebalanceada: margens menores, custos fixos e impostos maiores em todas as dificuldades",
-        "5S e ISO 9001 só a partir do Barracão Nível 4",
-        "Corrigido: nomes internos (Node3D) ao reinstalar máquinas guardadas"
       ]
     }
   ]
