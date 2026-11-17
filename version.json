@@ -1,11 +1,19 @@
 {
-  "version": "0.16.1",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.16.1/FerramentariaTycoon.pck",
-  "pck_sha256": "62ce51500b142f86f7d292727746c09ff297989585abb21c32a7696484c3dbff",
-  "pck_size": 225472332,
+  "version": "0.17.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.17.0/FerramentariaTycoon.pck",
+  "pck_sha256": "d83c63aea2c20f24da1a637cb31ddb06dea7c3783c3fcc74974ca56ea1b3c70d",
+  "pck_size": 240011028,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.17.0",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 27: polimento pre-Steam",
+        "Textos de eventos, metas de credito e avisos 100% localizados (11 idiomas, moeda $ fora do portugues); fonte CJK embutida (chines, japones e coreano funcionam em qualquer PC); trilha sonora procedural dia/noite/tensa, novos efeitos (contrato, urgente, doca, ponte rolante, conquista), sliders Geral/Musica/Efeitos e Fabrica e botao de mudo no HUD; saves versionados com migracao; 25 conquistas com nova aba em Missoes."
+      ]
+    },
     {
       "version": "0.16.1",
       "date": "2026-11-17",
@@ -92,14 +100,6 @@
       "notes": [
         "Fase 22: turnos e jornada, energia que recupera, central de alertas, UI compacta e ranking online",
         "Jornada 8/9/10h e 1o/2o/3o turno no RH, com troca de turno no portao e energia que recupera em casa; nova area fixa de alertas (faixa, badge e toasts) que nao cobre mais janelas nem botoes; interface compacta 85% por padrao (opcao de escala em Opcoes) e modais menores; botao Ranking no jogo e secao Ranking no site (ativa assim que o servidor do ranking for configurado)."
-      ]
-    },
-    {
-      "version": "0.10.1",
-      "date": "2026-11-16",
-      "notes": [
-        "Fase 21: hotfix de saves (limpeza total ao carregar) e salas de TI/Engenharia no Nivel 5",
-        "Corrigido vazamento de maquinas, funcionarios e pedidos ao trocar de save; salas de Comercial, Engenharia e TI agora existem no Nivel 5; Engenheiro e Analista de TI podem ser contratados no RH (Cargos Especiais)."
       ]
     }
   ]
