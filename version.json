@@ -1,11 +1,19 @@
 {
-  "version": "0.12.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.12.0/FerramentariaTycoon.pck",
-  "pck_sha256": "0cb2cc2ebdc020ff951534aef88e6dfe9dc9272efebf27dd4f03903676457d20",
-  "pck_size": 219833776,
+  "version": "0.13.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.13.0/FerramentariaTycoon.pck",
+  "pck_sha256": "17a90d223694db69155d669cc6d66cc781e9691baddcecab79f5697490d3b7e1",
+  "pck_size": 219859712,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.13.0",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 23: nome livre do Diretor, pedidos por tier de maquinas, RH com Mesa e Analista, moral natural, treinamento em lote",
+        "Nome livre do Diretor(a) na criacao; pedidos complexos (CNC, retifica, CMM 3D) conforme o parque de maquinas; mensagens de fila por porte da fabrica; moral regenera naturalmente; nova Mesa de RH e Analista de RH; Beneficios e PLR; treinamento em lote por setor e capacitacao automatica; logistica respeita pausa e velocidade."
+      ]
+    },
     {
       "version": "0.12.0",
       "date": "2026-11-17",
@@ -106,13 +114,6 @@
         "Empilhadeira funcionando",
         "A Empilhadeira Elétrica comprada agora trabalha, com empilhadeirista incluso transportando feixes de aço (+80% no transporte interno)",
         "Botão de reportar bug (F8) abre o portal correto"
-      ]
-    },
-    {
-      "version": "0.6.4",
-      "date": "2026-11-16",
-      "notes": [
-        "Correção: o botão Abrir Portal de Playtest (F8) agora abre o site certo"
       ]
     }
   ]
