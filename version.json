@@ -1,11 +1,19 @@
 {
-  "version": "0.14.1",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.14.1/FerramentariaTycoon.pck",
-  "pck_sha256": "ec36d4e01742589dcc67263106dc99e940650806c1e77805a4c2a8d0e717cfcf",
-  "pck_size": 219900080,
+  "version": "0.14.2",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.14.2/FerramentariaTycoon.pck",
+  "pck_sha256": "7c63e9190d8f5f2ce883cef1c9af51f1c3b77eb94721d7830039f45fc7db530a",
+  "pck_size": 219903632,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.14.2",
+      "date": "2026-11-17",
+      "notes": [
+        "Layout: preview explica o bloqueio e catalogo avisa quando a maquina nao cabe; missao Primeira melhoria clara; valores flutuantes dentro da oficina",
+        "Preview de instalacao mostra o motivo do bloqueio; catalogo avisa 'nao cabe no layout atual' e separa maquinas de moveis/ferramentas; missao Primeira melhoria cita exemplos validos; ganhos e despesas flutuantes ficam dentro do galpao."
+      ]
+    },
     {
       "version": "0.14.1",
       "date": "2026-11-17",
@@ -100,15 +108,6 @@
         "Novos cargos: Engenheiro (CAD/CAM) e Analista de TI, com efeitos reais",
         "Rede de Ar Comprimido Industrial profissional (+15% de velocidade) no Barracão Nível 5",
         "Som próprio para cada tipo de máquina: torno, CNC, retífica, prensa e eletroerosão"
-      ]
-    },
-    {
-      "version": "0.7.1",
-      "date": "2026-11-16",
-      "notes": [
-        "Empilhadeira logística e efeitos por máquina",
-        "A empilhadeira agora vai à doca quando chega caminhão, leva o palete ao estoque e carrega a expedição",
-        "Cada máquina tem seu efeito: cavaco no torno/fresa, névoa de refrigerante no CNC, centelhas azuis na eletroerosão, prensa sem faísca"
       ]
     }
   ]
