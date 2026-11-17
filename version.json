@@ -1,11 +1,19 @@
 {
-  "version": "0.14.2",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.14.2/FerramentariaTycoon.pck",
-  "pck_sha256": "7c63e9190d8f5f2ce883cef1c9af51f1c3b77eb94721d7830039f45fc7db530a",
-  "pck_size": 219903632,
+  "version": "0.15.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.15.0/FerramentariaTycoon.pck",
+  "pck_sha256": "c2b35fea88db9a314e8211aef397f31c51a50ccb28e13b4aa36b0311929ad72b",
+  "pck_size": 219915420,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.15.0",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 24B: ciclo dia/noite com iluminacao por turnos, periodo no relogio e opcao Sempre Dia",
+        "Amanhecer, dia, entardecer e noite seguem o relogio do jogo; luminarias do galpao ficam fortes com turno noturno e quase apagadas sem ele; postes e farois acendem a noite; relogio do HUD mostra periodo e turno; Opcoes > Video > Ciclo Visual Dia/Noite (Dinamico ou Sempre Dia)."
+      ]
+    },
     {
       "version": "0.14.2",
       "date": "2026-11-17",
@@ -96,18 +104,6 @@
         "Suprimentos como gestao de estoque com reposicao automatica",
         "Arvore de TI, projetos de Engenharia e novas maquinas metal-mecanicas (sem injetora)",
         "Multiplos caminhoes simultaneos nas docas"
-      ]
-    },
-    {
-      "version": "0.8.0",
-      "date": "2026-11-16",
-      "notes": [
-        "Fase 17 completa: ponte rolante, salas de setores, ar comprimido e sons",
-        "Ponte rolante agora roda nos trilhos superiores (piso livre) e abastece as máquinas pesadas",
-        "Salas fechadas de Comercial, Engenharia e TI a partir do Barracão Nível 3, com funcionários sentados digitando",
-        "Novos cargos: Engenheiro (CAD/CAM) e Analista de TI, com efeitos reais",
-        "Rede de Ar Comprimido Industrial profissional (+15% de velocidade) no Barracão Nível 5",
-        "Som próprio para cada tipo de máquina: torno, CNC, retífica, prensa e eletroerosão"
       ]
     }
   ]
