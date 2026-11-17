@@ -1,11 +1,19 @@
 {
-  "version": "0.13.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.13.0/FerramentariaTycoon.pck",
-  "pck_sha256": "17a90d223694db69155d669cc6d66cc781e9691baddcecab79f5697490d3b7e1",
-  "pck_size": 219859712,
+  "version": "0.14.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.14.0/FerramentariaTycoon.pck",
+  "pck_sha256": "87871ce8187d3d06950e716e777dbb26d320a89899acc34a59d7f8796874a52d",
+  "pck_size": 219898416,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.14.0",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 24: orcamentos com negociacao, urgencia detalhada, fila e prioridade de producao",
+        "Orcamento tecnico-comercial (#PED, custo estimado, previsao de entrega, preco ajustavel, contraproposta do cliente); evento de urgencia +40% mostra pedido, progresso, prazo e estimativa; orcamento fechado vira ordem de producao com aco reservado e fila; botoes de Prioridade Maxima, subir/descer e roteiro nos pedidos ativos."
+      ]
+    },
     {
       "version": "0.13.0",
       "date": "2026-11-17",
@@ -105,15 +113,6 @@
         "Economia rebalanceada: margens menores, custos fixos e impostos maiores em todas as dificuldades",
         "5S e ISO 9001 só a partir do Barracão Nível 4",
         "Corrigido: nomes internos (Node3D) ao reinstalar máquinas guardadas"
-      ]
-    },
-    {
-      "version": "0.6.5",
-      "date": "2026-11-16",
-      "notes": [
-        "Empilhadeira funcionando",
-        "A Empilhadeira Elétrica comprada agora trabalha, com empilhadeirista incluso transportando feixes de aço (+80% no transporte interno)",
-        "Botão de reportar bug (F8) abre o portal correto"
       ]
     }
   ]
