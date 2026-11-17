@@ -1,11 +1,19 @@
 {
-  "version": "0.16.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.16.0/FerramentariaTycoon.pck",
-  "pck_sha256": "375f49a2e2f36380e0ea40f6ae8a38ca4b9ae1725ae09919e350859a011edf30",
-  "pck_size": 224775708,
+  "version": "0.16.1",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.16.1/FerramentariaTycoon.pck",
+  "pck_sha256": "62ce51500b142f86f7d292727746c09ff297989585abb21c32a7696484c3dbff",
+  "pck_size": 225472332,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.16.1",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 25: traducao completa em 11 idiomas (de, es, fr, ru, zh, ja, ko, pl, tr)",
+        "Todas as 1230 chaves de interface traduzidas nos 9 idiomas novos (traducao automatica, ainda sem revisao nativa)."
+      ]
+    },
     {
       "version": "0.16.0",
       "date": "2026-11-17",
@@ -92,14 +100,6 @@
       "notes": [
         "Fase 21: hotfix de saves (limpeza total ao carregar) e salas de TI/Engenharia no Nivel 5",
         "Corrigido vazamento de maquinas, funcionarios e pedidos ao trocar de save; salas de Comercial, Engenharia e TI agora existem no Nivel 5; Engenheiro e Analista de TI podem ser contratados no RH (Cargos Especiais)."
-      ]
-    },
-    {
-      "version": "0.10.0",
-      "date": "2026-11-16",
-      "notes": [
-        "Fase 20: auto-layout industrial, galpao sem colunas internas, 4 novos modelos 3D, funcionarios sem fila na parede, alerta preditivo e Lean",
-        "Novo botao Auto-Desempacotar e Organizar Layout; mudanca de galpao ja organiza as celulas; galpoes sem colunas internas; novas maquinas com modelos proprios (serra automatica, furadeira radial, mandrilhadora, centro multieixos); operadores vao ao posto de trabalho; alerta preditivo de 40% de desgaste (TI nivel 3); Lean reduz deslocamento e espera."
       ]
     }
   ]
