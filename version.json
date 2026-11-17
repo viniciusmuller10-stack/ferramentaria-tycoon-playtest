@@ -1,11 +1,19 @@
 {
-  "version": "0.17.1",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.17.1/FerramentariaTycoon.pck",
-  "pck_sha256": "fb2e8f210287dde0840af603a4ddf1abae66dc6fc6c7aeb11df513348f2fe77f",
-  "pck_size": 240013572,
+  "version": "0.17.2",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.17.2/FerramentariaTycoon.pck",
+  "pck_sha256": "14c9cf9b69fb2d3f6d11f7fec84a254864c537a4bbf205230ffe8f164993674d",
+  "pck_size": 240015172,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.17.2",
+      "date": "2026-11-17",
+      "notes": [
+        "Correcoes: auditor, negociacao e pecas",
+        "Auditor da ISO/5S so visita quem tem a certificacao. Clientes bem mais exigentes: +15% sobre o preco justo quase sempre vira contraproposta. Corrigidos bloco flutuando no palete de expedicao e tarugo na mao do operador contratado ao voltar do estoque."
+      ]
+    },
     {
       "version": "0.17.1",
       "date": "2026-11-17",
@@ -92,14 +100,6 @@
       "notes": [
         "Equilibrio de tempo: dia de 240 s e troca de turno sem perder peca",
         "Dia de jogo agora dura 240 s (antes 120 s), dando tempo real de producao em cada turno. Operador termina a peca em andamento antes de sair do turno e o turno seguinte chega 1h antes, sem a maquina parar. Producao dos 3 turnos subiu bastante e a fabrica grande deixa de perder caixa."
-      ]
-    },
-    {
-      "version": "0.11.1",
-      "date": "2026-11-16",
-      "notes": [
-        "Correcao dos turnos: servicos continuam produzindo na troca de turno",
-        "Corrigido: servicos aceitos ficavam parados quando o operador responsavel saia do turno. Agora o operador do turno ativo assume o servico na mesma maquina, e a producao segue 24h com 3 turnos."
       ]
     }
   ]
