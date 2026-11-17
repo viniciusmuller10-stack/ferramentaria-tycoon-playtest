@@ -174,13 +174,13 @@ $("lightbox").onclick = () => { $("lightbox").hidden = true; };
 /* ---------- ranking oficial (leitura publica, sem codigo de convite) ---------- */
 (function ranking() {
   const DIFF = { facil: "Fácil", medio: "Médio", dificil: "Difícil", patrao: "Modo Patrão" };
-  let rows = [], diff = "", sort = "net_worth";
+  let rows = [], diff = "patrao", sort = "net_worth";
   const body = $("rkBody");
   const money = (n) => "R$ " + Number(n).toLocaleString("pt-BR");
   function render() {
     const list = rows.filter((r) => !diff || r.difficulty === diff).sort((a, b) => Number(b[sort]) - Number(a[sort])).slice(0, 100);
     $("rkcount").textContent = rows.length + " oficina" + (rows.length === 1 ? "" : "s");
-    if (!list.length) { body.innerHTML = '<tr><td colspan="8" class="hint">Nenhuma oficina neste filtro ainda.</td></tr>'; return; }
+    if (!list.length) { body.innerHTML = '<tr><td colspan="8" class="hint">Nenhuma oficina no Modo Patrão ainda.</td></tr>'; return; }
     body.innerHTML = list.map((r, i) => `<tr class="${i < 3 ? "podium" : ""}"><td>${i + 1}</td><td>${esc(r.company_name)}</td><td>${esc(r.director_name)}</td><td>${esc(DIFF[r.difficulty] || r.difficulty)}</td><td>${Number(r.level)}</td><td>${Number(r.days)}</td><td>★ ${Number(r.reputation).toFixed(1)}</td><td>${money(r.net_worth)}</td></tr>`).join("");
   }
   async function load() {
@@ -199,7 +199,6 @@ $("lightbox").onclick = () => { $("lightbox").hidden = true; };
       $("rkcount").textContent = "—";
     }
   }
-  $("rkDiff").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; diff = b.dataset.d; [...$("rkDiff").children].forEach((c) => c.classList.toggle("on", c === b)); load(); };
   $("rkSort").onclick = (e) => { const b = e.target.closest("button"); if (!b || !b.dataset.s) return; sort = b.dataset.s; [...$("rkSort").querySelectorAll("button")].forEach((c) => c.classList.toggle("on", c === b)); load(); };
   load();
   setInterval(load, 30000);
