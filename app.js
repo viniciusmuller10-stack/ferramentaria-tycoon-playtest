@@ -190,7 +190,8 @@ $("lightbox").onclick = () => { $("lightbox").hidden = true; };
         const r = await fetch(local + "/rest/v1/rpc/list_ranking", { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" });
         rows = await r.json();
       } else {
-        rows = (await rpc("list_ranking", {})) || [];
+        const args = { p_sort: sort }; if (diff) args.p_difficulty = diff;
+        rows = (await rpc("list_ranking", args)) || [];
       }
       render();
     } catch (e) {
@@ -198,8 +199,8 @@ $("lightbox").onclick = () => { $("lightbox").hidden = true; };
       $("rkcount").textContent = "—";
     }
   }
-  $("rkDiff").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; diff = b.dataset.d; [...$("rkDiff").children].forEach((c) => c.classList.toggle("on", c === b)); render(); };
-  $("rkSort").onclick = (e) => { const b = e.target.closest("button"); if (!b || !b.dataset.s) return; sort = b.dataset.s; [...$("rkSort").querySelectorAll("button")].forEach((c) => c.classList.toggle("on", c === b)); render(); };
+  $("rkDiff").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; diff = b.dataset.d; [...$("rkDiff").children].forEach((c) => c.classList.toggle("on", c === b)); load(); };
+  $("rkSort").onclick = (e) => { const b = e.target.closest("button"); if (!b || !b.dataset.s) return; sort = b.dataset.s; [...$("rkSort").querySelectorAll("button")].forEach((c) => c.classList.toggle("on", c === b)); load(); };
   load();
   setInterval(load, 30000);
 })();

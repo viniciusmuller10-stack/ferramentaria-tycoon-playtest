@@ -1,11 +1,19 @@
 {
-  "version": "0.11.2",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.11.2/FerramentariaTycoon.pck",
-  "pck_sha256": "683373750553f34c299f48cd44dd50e4e297dbaf6d7d35f6e06da56eb5658006",
-  "pck_size": 219820208,
+  "version": "0.12.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.12.0/FerramentariaTycoon.pck",
+  "pck_sha256": "0cb2cc2ebdc020ff951534aef88e6dfe9dc9272efebf27dd4f03903676457d20",
+  "pck_size": 219833776,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.12.0",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 23: save completo, turnos coerentes, ranking seguro, correcoes de interface",
+        "Salvar e carregar agora mantem pedidos em producao, progresso das pecas e entregas em transito. Operador principal segue o 1o turno, 3 turnos liberam mais servicos simultaneos e o RH mostra operadores sem servico. Ranking mais seguro: Sandbox e partidas com ferramentas de teste ficam de fora, empresa protegida por token e patrimonio liquido. F8 captura a tela antes de fechar a janela, ESC e atalhos respeitam o Ranking, multas sempre cobradas e menos erros internos."
+      ]
+    },
     {
       "version": "0.11.2",
       "date": "2026-11-16",
@@ -102,13 +110,6 @@
     },
     {
       "version": "0.6.4",
-      "date": "2026-11-16",
-      "notes": [
-        "Correção: o botão Abrir Portal de Playtest (F8) agora abre o site certo"
-      ]
-    },
-    {
-      "version": "0.6.3",
       "date": "2026-11-16",
       "notes": [
         "Correção: o botão Abrir Portal de Playtest (F8) agora abre o site certo"
