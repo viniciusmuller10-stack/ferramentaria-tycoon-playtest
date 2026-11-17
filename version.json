@@ -1,11 +1,19 @@
 {
-  "version": "0.15.0",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.15.0/FerramentariaTycoon.pck",
-  "pck_sha256": "c2b35fea88db9a314e8211aef397f31c51a50ccb28e13b4aa36b0311929ad72b",
-  "pck_size": 219915420,
+  "version": "0.16.0",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.16.0/FerramentariaTycoon.pck",
+  "pck_sha256": "375f49a2e2f36380e0ea40f6ae8a38ca4b9ae1725ae09919e350859a011edf30",
+  "pck_size": 224775708,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.16.0",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 25: 11 idiomas, camera por toque e trackpad, base para macOS e mobile",
+        "Seletor com 11 idiomas (tela inicial e Opcoes), idioma do sistema na primeira abertura, fontes para russo/chines/japones/coreano, nucleo da interface traduzido (restante cai em ingles), camera por toque e trackpad, area segura mobile e presets de exportacao macOS/Android/iOS."
+      ]
+    },
     {
       "version": "0.15.0",
       "date": "2026-11-17",
@@ -92,18 +100,6 @@
       "notes": [
         "Fase 20: auto-layout industrial, galpao sem colunas internas, 4 novos modelos 3D, funcionarios sem fila na parede, alerta preditivo e Lean",
         "Novo botao Auto-Desempacotar e Organizar Layout; mudanca de galpao ja organiza as celulas; galpoes sem colunas internas; novas maquinas com modelos proprios (serra automatica, furadeira radial, mandrilhadora, centro multieixos); operadores vao ao posto de trabalho; alerta preditivo de 40% de desgaste (TI nivel 3); Lean reduz deslocamento e espera."
-      ]
-    },
-    {
-      "version": "0.9.0",
-      "date": "2026-11-16",
-      "notes": [
-        "Fase 18: UI compacta, saves, manutencao, RH gestor, estoque, TI/Engenharia, catalogo metal-mecanico e multiplas docas",
-        "Menus compactos, scroll preservado e multiplos saves nomeados",
-        "Central de Manutencao, Tecnico de Manutencao e RH gestor",
-        "Suprimentos como gestao de estoque com reposicao automatica",
-        "Arvore de TI, projetos de Engenharia e novas maquinas metal-mecanicas (sem injetora)",
-        "Multiplos caminhoes simultaneos nas docas"
       ]
     }
   ]
