@@ -1,11 +1,19 @@
 {
-  "version": "0.17.2",
-  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.17.2/FerramentariaTycoon.pck",
-  "pck_sha256": "14c9cf9b69fb2d3f6d11f7fec84a254864c537a4bbf205230ffe8f164993674d",
-  "pck_size": 240015172,
+  "version": "0.17.3",
+  "pck_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/download/v0.17.3/FerramentariaTycoon.pck",
+  "pck_sha256": "e0f77f0bacea0363b554114a709776dbc698a313afc1f178f6434b3565398ee5",
+  "pck_size": 240041296,
   "installer_url": "https://github.com/viniciusmuller10-stack/ferramentaria-tycoon-playtest/releases/latest/download/Setup_FerramentariaTycoon_Playtest.exe",
   "portal_url": "https://toolshoptycoon.com/",
   "changelog": [
+    {
+      "version": "0.17.3",
+      "date": "2026-11-17",
+      "notes": [
+        "Fase 26B: Garagem Residencial Americana",
+        "Nivel 1 remodelado como garagem residencial: siding, porta basculante com janelinhas, frontao de duas aguas, janelas menores com persianas e cortinas, luminarias de parede, compressor, bicicleta e escada. Entorno suburbano com casa vizinha, driveway, cerca branca, jardim, caixa de correio e carro do diretor; janelas e luminarias acendem a noite. Arvores, arbustos e postes assentados no chao (sem o quadrado flutuando) em todos os niveis."
+      ]
+    },
     {
       "version": "0.17.2",
       "date": "2026-11-17",
@@ -92,14 +100,6 @@
       "notes": [
         "Fase 23: save completo, turnos coerentes, ranking seguro, correcoes de interface",
         "Salvar e carregar agora mantem pedidos em producao, progresso das pecas e entregas em transito. Operador principal segue o 1o turno, 3 turnos liberam mais servicos simultaneos e o RH mostra operadores sem servico. Ranking mais seguro: Sandbox e partidas com ferramentas de teste ficam de fora, empresa protegida por token e patrimonio liquido. F8 captura a tela antes de fechar a janela, ESC e atalhos respeitam o Ranking, multas sempre cobradas e menos erros internos."
-      ]
-    },
-    {
-      "version": "0.11.2",
-      "date": "2026-11-16",
-      "notes": [
-        "Equilibrio de tempo: dia de 240 s e troca de turno sem perder peca",
-        "Dia de jogo agora dura 240 s (antes 120 s), dando tempo real de producao em cada turno. Operador termina a peca em andamento antes de sair do turno e o turno seguinte chega 1h antes, sem a maquina parar. Producao dos 3 turnos subiu bastante e a fabrica grande deixa de perder caixa."
       ]
     }
   ]
